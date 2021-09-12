@@ -1,0 +1,155 @@
+/* 
+### Primary
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;1,700;1,900&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+.cardContainer {
+    width: 320px;
+    min-height: 520px;
+    border-radius: 20px;
+    background-color: white;
+    padding-bottom: 3rem;
+}
+
+.headerImg {
+    width: 100%;
+    height: 200px;
+    background: url(../images/illustration-hero.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.summary {
+    margin: 4rem 0 3rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    font-weight: 500;
+    line-height: 150%;
+    color: hsl(224, 23%, 55%);
+}
+
+.currentOption {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    padding: 1.6rem 0;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+}
+
+.currentOption p:first-of-type {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.planName p {
+    margin: 0;
+}
+
+.planChange a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.planChange a:hover {
+    color: rgb(137, 129, 212);
+    text-decoration: none;
+}
+
+.btnProceed {
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 2.4rem;
+    padding: 1.6rem 0;
+}
+
+.btnProceed:hover {
+    background-color: rgb(137, 129, 212);
+}
+
+.btnCancel {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.btnCancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+.attribution {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    .cardContainer {
+        width: 480px;
+    }
+    .content {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
